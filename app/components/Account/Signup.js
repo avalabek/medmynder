@@ -5,6 +5,7 @@ import { signup } from '../../actions/auth';
 import { facebookLogin, twitterLogin, googleLogin, vkLogin, githubLogin } from '../../actions/oauth';
 import Messages from '../Messages';
 
+
 class Signup extends React.Component {
   constructor(props) {
     super(props);
@@ -41,30 +42,41 @@ class Signup extends React.Component {
   }
 
   render() {
-    return (
-      <div className="column row">
+    return <div className="column row" style={{backgroundColor: 'rgb(169, 209, 201)'}}>
         <div className="row">
           <div className="medium-8 medium-offset-2 columns">
-            <Messages messages={this.props.messages}/>
+            <Messages messages={this.props.messages} />
             <form onSubmit={this.handleSignup.bind(this)}>
               <h4>Create an account</h4>
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" placeholder="Name" value={this.state.name} onChange={this.handleChange.bind(this)} autoFocus/>
+              <input type="text" name="name" id="name" placeholder="Name" value={this.state.name} onChange={this.handleChange.bind(this)} autoFocus />
               <label htmlFor="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange.bind(this)}/>
+              <input type="email" name="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange.bind(this)} />
               <label htmlFor="password">Password</label>
-              <input type="password" name="password" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange.bind(this)}/>
-              <p className="help-text">By signing up, you agree to the <Link to="/">Terms of Service</Link>.</p>
-              <button type="submit" className="button">Create an account</button>
+              <input type="password" name="password" id="password" placeholder="Password" value={this.state.password} onChange={this.handleChange.bind(this)} />
+              <label htmlFor="name">Date of Birth</label>
+              <input type="text" name="dateofbirth" id="dateofbirth" placeholder="Date of Birth" value={this.state.dateofbirth} onChange={this.handleChange.bind(this)} autoFocus />
+              <label htmlFor="phone">Name</label>
+              <input type="text" name="phone" id="phone" placeholder="Phone number" value={this.state.phone} onChange={this.handleChange.bind(this)} autoFocus />
+              <p className="help-text">
+                By signing up, you agree to the <Link to="/">
+                  Terms of Service
+                </Link>.
+              </p>
+              <button type="submit" className="button">
+                Create an account
+              </button>
             </form>
-            <div className="hr-title"><span>or</span></div>
-            <div className="button-group">
+            <div className="hr-title">
+              <span>or</span>
             </div>
-            <p>Already have an account? <Link to="/login">Log in</Link></p>
+            <div className="button-group" />
+            <p>
+              Already have an account? <Link to="/login">Log in</Link>
+            </p>
           </div>
         </div>
-      </div>
-    );
+      </div>;
   }
 }
 

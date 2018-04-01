@@ -1,6 +1,8 @@
 /* Scaffolding
 /* ------------------------- */
-
+#background {
+  background-color: #a9d1c9;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -9,6 +11,14 @@ html {
 
 body {
   margin: 0 0 50px;
+  /* font-family: 'Libre Franklin',
+  sans-serif; */
+  /* font-family: 'Quattrocento Sans',
+  sans-serif;
+  font-family: 'Abhaya Libre',
+  serif;
+  font-family: 'IBM Plex Sans',
+  sans-serif; */
 }
 
 footer {
@@ -19,7 +29,9 @@ footer {
   height: 50px;
   width: 100%;
   line-height: 50px;
-}
+  
+  }
+
 
 .row.expanded {
   max-width: 940px;
@@ -122,6 +134,7 @@ footer {
   margin-bottom: 2rem;
   color: #fff;
   background-color: #333;
+  
 }
 
 .top-bar .avatar {
