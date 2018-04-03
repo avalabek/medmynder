@@ -1,0 +1,13 @@
+.navbar {
+    
+    background-color: #a1c9c8;
+    font-family: 'IBM Plex Sans',
+    sans-serif;
+    
+  }
+
+a {
+  font-size: 30px;
+  font-weight: bold;
+  color:white;
+}

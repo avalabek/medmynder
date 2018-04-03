@@ -1,0 +1,56 @@
+h4 { 
+  text-align: left;
+  font-family: 'IBM Plex Sans',
+  sans-serif;
+  font-size: 40px;
+  
+
+}
+
+#firstName, #lastName, #phone, #email, #notes, #dateOfBirth, #password {
+  color: black;
+  font-family: 'IBM Plex Sans',
+  sans-serif;
+  font-size: 40px;
+}
+form {
+  color: black;
+}
+.input-field {
+  color: orange;
+}
+#page {
+  text-align: center;
+
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #909;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #909;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #909;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #909;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #909;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #909;
+}
