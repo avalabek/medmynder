@@ -7,7 +7,7 @@ h4 {
 
 }
 
-#firstName, #lastName, #phone, #email, #notes, #dateOfBirth, #password {
+#firstName, #lastName, #phone, #email, #notes, #dateOfBirth, #password, label {
   color: black;
   font-family: 'IBM Plex Sans',
   sans-serif;
@@ -17,12 +17,26 @@ form {
   color: black;
 }
 .input-field {
-  color: orange;
+  color: black;
 }
 #page {
   text-align: center;
 
 }
+/* If you want to change the underline color it is here */
+/* label focus color */
+
+.input-field input:focus+label {
+  color: #4C191B !important;
+}
+
+/* label underline focus color */
+
+.row .input-field input:focus {
+  border-bottom: 1px solid #4C191B !important;
+  box-shadow: 0 1px 0 0 #4C191B !important
+}
+/* if you use placeholder text, here is how you change color */
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #909;
